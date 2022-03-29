@@ -36,7 +36,7 @@ service avahi-daemon restart\n\
 source /opt/ros/noetic/setup.bash\n\
 export ROS_MASTER_URI=http://smart_app.local:11311\n\
 export ROS_IP=robotiq.local\n\
-bash\n\
+roslaunch robotiq_85_bringup robotiq_85.launch\n\
 }\n\
 main $@' > /entrypoint.bash
 ENTRYPOINT ["bash", "/entrypoint.bash"]
